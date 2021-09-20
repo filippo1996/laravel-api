@@ -20,7 +20,7 @@
             </li>
             -->
 
-            <li v-for="numPage in getLastPage" :key="numPage" @click="getNumberPage(numPage)" class="page-item" :class="{'active' : numPage ===  activePage}">
+            <li v-for="numPage in getLastPage" :key="numPage" @click="getNumberPage(numPage)" class="page-item">
                 <span class="page-link">{{ numPage }}</span>
             </li>
 

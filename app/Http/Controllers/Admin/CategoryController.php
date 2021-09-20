@@ -49,6 +49,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
+        //$category = Category::where('id', '=', 1)->with('posts')->first();
         return view('admin.category.show',compact('category'));
     }
 
